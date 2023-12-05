@@ -1,0 +1,20 @@
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+.Incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.Completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+  cursor: pointer;
+}
