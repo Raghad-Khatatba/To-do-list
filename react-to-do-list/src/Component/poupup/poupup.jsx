@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import "./poupup.css";
 
-export default function Popup({ onClose, addTodo }) {
+export default function Popup({ togglePopup, addTodo }) {
   const [task, setTask] = useState("");
 
   const handleAddTask = () => {
     addTodo(task);
-    onClose();
+    togglePopup();
   };
 
   return (
@@ -21,7 +21,7 @@ export default function Popup({ onClose, addTodo }) {
           placeholder="What is the task today?"
         />
         <div>
-          <button className="Todo-btn" onClick={onClose}>
+          <button className="Todo-btn" onClick={togglePopup}>
             Cancel
           </button>
           <button className="Todo-btn" onClick={handleAddTask}>

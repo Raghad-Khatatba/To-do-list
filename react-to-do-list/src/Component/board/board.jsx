@@ -10,23 +10,17 @@ export default function Board({}) {
     setTodos([...todos, { task }]);
   };
 
-  const openPopup = () => {
-    setIsPopupOpen(true);
-  };
-
-  const closePopup = () => {
-    setIsPopupOpen(false);
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
   };
 
   return (
     <div className="Board">
       <h1>Get Things Done !</h1>
-      <button className="Todo-btn" onClick={openPopup}>
+      <button className="Todo-btn" onClick={togglePopup}>
         Add Task
       </button>
-      {isPopupOpen && (
-        <Popup  onClose={closePopup} addTodo={addTodo} />
-      )}
+      {isPopupOpen && <Popup togglePopup={togglePopup} addTodo={addTodo} />}
 
       {todos.map((task, index) => (
         <Card key={index} task={task} />
