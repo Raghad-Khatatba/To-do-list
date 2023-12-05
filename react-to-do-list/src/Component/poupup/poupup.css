@@ -1,0 +1,42 @@
+.Todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  width: 300px;
+  color: #fff;
+}
+.Todo-input::placeholder {
+  color: #ffffff4d;
+}
+.Todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  margin: 0 10px;
+  margin-top: 10px;
+}
+
+.Popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(78, 77, 77, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Popup-content {
+  background: #1a1a40;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 10px 10px 40px rgb(150, 145, 145);
+}
