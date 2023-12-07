@@ -7,7 +7,7 @@ export default function Board({}) {
   const [todos, setTodos] = useState([]);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const addTodo = (task) => {
-    setTodos([...todos, { task }]);
+    setTodos([...todos, task ]);
   };
 
   const togglePopup = () => {

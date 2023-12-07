@@ -13,7 +13,7 @@ export default function Card({ task }) {
       className={`Todo ${isCompleted ? "Completed" : "Incompleted"}`}
       onClick={toggleCompleted}
     >
-      <p>{task.task}</p>
+      <p>{task}</p>
     </div>
   );
 }
